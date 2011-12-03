@@ -21,3 +21,25 @@ push(function() {
 start();
 
 ```
+
+Another variation
+
+```javascript
+
+
+var queue = require('tq').queue();
+
+
+[
+	function() {
+		this();
+	},
+	function() {
+		this()
+	},
+	function() {
+		this();
+	}
+].forEach(queue.push);
+
+queue.start();
