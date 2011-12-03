@@ -25,8 +25,6 @@ start();
 Another variation
 
 ```javascript
-
-
 var queue = require('tq').queue();
 
 
@@ -43,6 +41,7 @@ var queue = require('tq').queue();
 ].forEach(queue.push);
 
 queue.start();
+```
 
 
 ## Api
