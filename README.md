@@ -1,4 +1,4 @@
-### Example
+## Example
 
 ```javascript
 
@@ -43,3 +43,19 @@ var queue = require('tq').queue();
 ].forEach(queue.push);
 
 queue.start();
+
+
+## Api
+
+
+### queue.push 
+pushes a queue to the end
+
+### queue.unshift
+pushes a queue to the beginning (next up)
+
+### queue.start
+starts a queue
+
+### queue.stop
+stops a queue
