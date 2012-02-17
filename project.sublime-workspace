@@ -16,10 +16,18 @@
 			}
 		},
 		{
-			"file": "lib/index.js",
+			"file": "/tmp/subl stdin yKb2ap.txt",
 			"settings":
 			{
-				"buffer_size": 1532,
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin DMo9Au.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -64,6 +72,7 @@
 	},
 	"file_history":
 	[
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/tq/lib/index.js",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/celeri/lib/modules/auth.js",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/beet/lib/index.js",
 		"/tmp/subl stdin 292YvE.txt"
@@ -116,7 +125,6 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
 				{
@@ -147,10 +155,10 @@
 				},
 				{
 					"buffer": 1,
-					"file": "lib/index.js",
+					"file": "/tmp/subl stdin yKb2ap.txt",
 					"settings":
 					{
-						"buffer_size": 1532,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -163,17 +171,42 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 788.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "/tmp/subl stdin DMo9Au.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "README.md",
 					"settings":
 					{
@@ -200,7 +233,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "/tmp/subl stdin K083uW.txt",
 					"settings":
 					{
