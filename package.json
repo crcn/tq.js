@@ -10,7 +10,7 @@
       "mocha":"1.8.x"
     },
     "scripts": {
-      "test": "mocha"
+      "test": "mocha --reporter list"
     },
     "main": "./lib/index.js"
 }
