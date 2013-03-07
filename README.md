@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/crcn/tq.js.png)](https://secure.travis-ci.org/crcn/tq.js)
+
 ## Example
 
 ```javascript
@@ -52,6 +54,12 @@ pushes a queue to the end
 
 ### queue.unshift
 pushes a queue to the beginning (next up)
+
+### queue.now(callback)
+
+### queue.then(callback)
+
+### callback queue.wait()
 
 ### queue.start
 starts a queue
