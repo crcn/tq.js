@@ -1,26 +1,11 @@
 [![Build Status](https://secure.travis-ci.org/crcn/tq.js.png)](https://secure.travis-ci.org/crcn/tq.js)
 
+TQ is a flexible, tiny queue library for node.js
+
 ## Example
 
 ```javascript
-
-var queue = require('tq').queue();
-
-
-
-queue.push(function() {
-	console.log('next');
-
-	this();
-
-}).
-push(function() {
-	
-	console.log("next");
-
-	this();
-}).
-start();
+var queue = require("tq").create().start();
 
 ```
 
