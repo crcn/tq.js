@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/crcn/tq.js.png)](https://secure.travis-ci.org/crcn/tq.js)
+[![Build Status](https://travis-ci.org/crcn/tq.js.png)](https://travis-ci.org/crcn/tq.js)
 
 TQ is a flexible, tiny queue library for node.js
 

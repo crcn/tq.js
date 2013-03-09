@@ -72,10 +72,56 @@ describe("tq", function() {
       next();
     });
 
+    q.then(function() {
+      expect(i).to.be(2);
+    });
+    q.then(next);
+
+  });
+
+
+  it("can call 'now' 2", function(next) {
+    var i = 0;
+    q.push(function(next) {
+      q.now(function(q) {
+        q.then(function() {
+          i++;
+        });
+        q.push(function(next) {
+          i++;
+          process.nextTick(next);
+        });
+        q.then(next);
+      });
+    });
 
     q.then(function() {
       expect(i).to.be(2);
     });
     q.then(next);
-  })
+  });
+
+  it("can call 'now' 3", function(next) {
+    var i = 0;
+    q.push(function(next) {
+      q.now(function(q) {
+        q.then(function() {
+          i++;
+        });
+        q.push(function(next) {
+          i++;
+          process.nextTick(next);
+        });
+        q.then(function(){});
+        next();
+      });
+    });
+
+    q.then(function() {
+      expect(i).to.be(2);
+    });
+
+    q.then(next);
+  });
+
 });
