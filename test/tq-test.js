@@ -124,4 +124,16 @@ describe("tq", function() {
     q.then(next);
   });
 
+  it("can set a timeout", function(next) {
+    var q = tq.create().start().timeout(1);
+    q.once("error", function(e) {
+      expect(e.message).to.be("Timeout");
+      next();
+    });
+    q.push(function(next) {
+      setTimeout(next, 2);
+    });
+
+  })
+
 });
