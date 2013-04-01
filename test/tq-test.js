@@ -133,7 +133,19 @@ describe("tq", function() {
     q.push(function(next) {
       setTimeout(next, 2);
     });
+  });
 
-  })
+  it("can handle an exception and still continue", function(next) {
+    var q = tq.create().start();
+    q.once("error", function() {
+
+    });
+    q.push(function(next) {
+      throw new Error("fail");
+    });
+    q.push(function() {
+      next();
+    });
+  });
 
 });
